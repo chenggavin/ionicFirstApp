@@ -7,21 +7,10 @@
 </ion-header>
 
 <ion-content padding>
-<ion-item>
-	<ion-input type="number" [(ngModel)]="a"></ion-input>
-</ion-item>
-<ion-item>
-	<ion-input type="number" [(ngModel)]="b"></ion-input>
-</ion-item>
+<ion-list>
+	<ion-item *ngFor="let someName of myArray">
+		{{someName}}
+	</ion-item>
+</ion-list>
 
-
-  <button ion-button (click)="calculate()">Calulate me!</button>
-
-  <br>
-  <h3>{{ result }}</h3>
-
-  <p>
-  	{{a}} 
-  	<br>
-  	{{b}}
 </ion-content>

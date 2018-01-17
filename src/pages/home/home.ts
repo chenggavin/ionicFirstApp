@@ -6,9 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-	a = "5";
-	b = "10";
-	result = 0;
+	myArray = ['this', 'is','my','first', 'ngFor'];
 
 
 constructor(public navCtrl: NavController) {
