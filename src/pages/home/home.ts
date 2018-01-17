@@ -12,8 +12,8 @@ export class HomePage {
 constructor(public navCtrl: NavController) {
 
 }
-	calculate() {
-		this.result = parseInt(this.a) + parseInt(this.b);
-	}
+	// calculate() {
+	// 	this.result = parseInt(this.a) + parseInt(this.b);
+	// }
 
 }
