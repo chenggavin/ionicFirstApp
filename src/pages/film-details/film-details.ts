@@ -16,7 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class FilmDetailsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	  // this.filmId = this.navParams.get('filmId');
+  	this.film = this.navParams.get('film');
   }
 
   goBack() {
