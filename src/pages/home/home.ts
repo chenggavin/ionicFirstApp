@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 	myArray = ['this', 'is','my','first', 'ngFor'];
-	 myVariable: string = 'The force is with me!';		
+	myVariable: string = 'The force is with me!';		
 
 
 constructor(public navCtrl: NavController) {

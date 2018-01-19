@@ -6,7 +6,10 @@
   </ion-navbar>
 </ion-header>
 
+
+
 <ion-content padding>
+	{{ myVariable }}
 <ion-list>
 	<ion-item-sliding *ngFor="let someName of myArray">
 		<ion-item>
@@ -21,4 +24,6 @@
 	</ion-item-sliding >
 </ion-list>
 
+
+<button ion-button full (click)="updateMyValue()">Update Text</button>
 </ion-content>
