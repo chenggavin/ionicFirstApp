@@ -15,6 +15,7 @@ export class ApiProvider {
   }
 
   getFilms() {
+  	
   	return this.http.get('https://swapi.co/api/films');
   }
 

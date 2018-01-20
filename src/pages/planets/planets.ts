@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ApiProvider } from './../../providers/api/api';
 
 /**
  * Generated class for the PlanetsPage page.
@@ -14,9 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'planets.html',
 })
 export class PlanetsPage {
+	
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+
+ constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
+	this.planets= this.apiProvider.getFilms();
+}
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PlanetsPage');

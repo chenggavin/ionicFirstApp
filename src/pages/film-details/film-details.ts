@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
 
 /**
  * Generated class for the FilmDetailsPage page.
@@ -15,13 +17,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FilmDetailsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	this.film = this.navParams.get('film');
-  }
+ 
 
-  goBack() {
-  	this.navCtrl.pop();
-  }
 
 
 

@@ -16,8 +16,8 @@
 <ion-content padding>
 	hi
 	<ion-list>
-		<button ion-item *ngFor="let film of (people | async)?.results">
-    {{ film.director }}
-		</button>
+		<ion-item *ngFor="let peeps of (people | async)?.results">
+    {{ peeps.director }}
+		</ion-item>
 	</ion-list>
 </ion-content>
