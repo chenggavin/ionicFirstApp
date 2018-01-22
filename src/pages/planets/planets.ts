@@ -15,6 +15,7 @@ import { ApiProvider } from './../../providers/api/api';
   templateUrl: 'planets.html',
 })
 export class PlanetsPage {
+	planets: Observable<any>;
 	
 
 
