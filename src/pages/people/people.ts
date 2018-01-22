@@ -13,12 +13,8 @@ import { HttpClient } from '@angular/common/http';
 export class PeoplePage {
 	people: Observable<any>;
 
-  constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
-	this.people= this.apiProvider.getFilms();
-}
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PeoplePage');
-  }
+  	constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
+		this.people= this.apiProvider.getFilms();
+	}
 
 }

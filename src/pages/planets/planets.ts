@@ -19,13 +19,9 @@ export class PlanetsPage {
 	
 
 
- constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
-	this.planets= this.apiProvider.getFilms();
-}
+ 	constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
+		this.planets= this.apiProvider.getFilms();
+	}
   
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PlanetsPage');
-  }
 
 }
