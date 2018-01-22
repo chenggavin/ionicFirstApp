@@ -19,17 +19,18 @@ import { EmailComposer } from '@ionic-native/email-composer';
 export class FilmDetailsPage {
 	film:any;
 
-	constructor(public navCtrl: NavController, public navParams: NavParams, private emailComposer: EmailComposer) {
-    	this.film = this.navParams.get('film');
- 	}
-
- 	shareFilm() {
- 		let email = {
- 			to: 'gavincheng01@gmail.com',
- 			subject: 'I love this one: ' + this.film.title,
- 			body: 'Can you remember the opening?<br><br>\"' + this.film.opening_crawl + '\"',
- 			isHtml: true
- 		};
- 		this.emailComposer.open(email);
- 	}
+  constructor(public navCtrl: NavController, public navParams: NavParams, private emailComposer: EmailComposer) {
+    this.film = this.navParams.get('film');
+  }
+ 
+  shareFilm() {
+    let email = {
+      to: 'gavincheng01@gmail.com',
+      subject: 'I love this one: ' + this.film.title,
+      body: 'Can you remember the opening?<br><br>\"' + this.film.opening_crawl + '\"',
+      isHtml: true
+    };
+ 
+    this.emailComposer.open(email);
+  }
 }
