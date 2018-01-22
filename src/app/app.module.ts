@@ -8,6 +8,19 @@ import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiProvider } from '../providers/api/api';
 import { EmailComposer } from '@ionic-native/email-composer';
+import { AngularFireModule } from 'angularfire2';
+
+
+
+  // Initialize Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyBDPH07NgYXp0Gh5Q2OkAHMyndymDnKX4A",
+    authDomain: "myapp-integration.firebaseapp.com",
+    databaseURL: "https://myapp-integration.firebaseio.com",
+    projectId: "myapp-integration",
+    storageBucket: "",
+    messagingSenderId: "622015750335"
+  };
  
 @NgModule({
   declarations: [
@@ -16,7 +29,8 @@ import { EmailComposer } from '@ionic-native/email-composer';
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
