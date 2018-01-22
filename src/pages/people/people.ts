@@ -15,6 +15,6 @@ export class PeoplePage {
 
   	constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
 		this.people= this.apiProvider.getFilms();
-	}
+}
 
 }

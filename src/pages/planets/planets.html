@@ -13,9 +13,9 @@
 
 <ion-content padding>
 	<ion-list>
-		<button ion-item *ngFor="let planet of (planets | async)?.results">
+		<ion-item ion-item *ngFor="let planet of (planets | async)?.results">
     		{{ planet.planets }}
-		</button>	
+		</ion-item>	
 	</ion-list>
 </ion-content>
 

@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ApiProvider } from './../../providers/api/api';
+import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
+ 
 
 /**
  * Generated class for the PlanetsPage page.
@@ -17,8 +20,6 @@ import { ApiProvider } from './../../providers/api/api';
 export class PlanetsPage {
 	planets: Observable<any>;
 	
-
-
  	constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
 		this.planets= this.apiProvider.getFilms();
 	}
